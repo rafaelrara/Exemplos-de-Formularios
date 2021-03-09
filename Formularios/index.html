@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" >
+        <ul>
+            <li><a class="active" href= "index.html">Home</a></li>
+            <li><a href= "index.html">Pag1</a></li>
+            <li><a href= "index.html">Pag2</a></li>
+            <li><a href= "index.html">Pag3</a></li>
+        </ul>
+        
+        <h1 id="titulo">
+            Formulários!!!
+        </h1>
+    </div>
+
+    <h2 style="color: aliceblue;" > Projeto 1</h2>
+    <form name="dados" id="dados" method="POST" action="">
+        <fieldset>
+            <legend style="color: green;">Dados Pessoais</legend>
+            <label for="nome"> Nome do usuário: </label>
+            <input type="text" id="nome" autofocus>
+        </fieldset>
+
+        <fieldset>
+            <legend style="color: green;">Dados Pessoais</legend>
+            <label for="senha">Senha do usuário:</label>
+            <input type="password" id="senha">
+        </fieldset>
+
+        <fieldset>
+            <label for="data">Data da viagem:</label>
+            <input type="date" id="data">
+        </fieldset>
+
+        <fieldset>
+            <label for="hora">Hora do Embarque</label>
+            <input type="time" id="hora">
+        </fieldset>
+
+        <fieldset>
+            <label for="data-hora">Data e hora do embarque:</label>
+            <input type="datetime-local" id="data-hora">
+        </fieldset>
+        
+        <fieldset>
+            <label for="mes">Mês e ano de nascimento:</label>
+            <input type="month" id="mes">
+        </fieldset>
+
+        <fieldset>
+            <label for="semana">Semana de Entrega</label>
+            <input type="week" id="semana">
+        </fieldset>
+
+        <fieldset>
+            <!-- Poosui validação própria, ñ permitindo sem @ e (.) -->
+            <label for="email">Seu e-mail:</label>
+            <input type="email" id="email" placeholder="exemplo@uol.com.br">
+        </fieldset>
+
+        <fieldset>
+            <label for="site">Seu Site:</label>
+            <input type="url" id="site">
+        </fieldset>
+
+        <fieldset>
+            <!-- Precisa de de uma liguagem auxiliando o HTML p/funcionar -->
+            <label for="busca">Procurar:</label>
+            <input type="search" id="busca">
+        </fieldset>
+
+        <fieldset>
+            <label for="numero">Número da suíte</label>
+            <input type="number" id="numero">
+        </fieldset>
+
+        <fieldset>
+            <label for="valor">Valor das diarias:</label>
+            <input min="0" max="1000" type="range" id="valor">
+        </fieldset>
+
+        <fieldset>
+            <label for="telefone">Telefone do hotel:</label>
+            <input type="tel" id="telefone">
+        </fieldset>
+
+        <fieldset>
+            <label for="cor">Selecione a cor:</label>
+            <input type="color" id="cor">
+        </fieldset>
+
+        <fieldset>
+            <h3>Selecione o tipo de acomodação:</h3>
+            <input type="radio" name="suite" id="first">
+            <label for="first">Suíte premium</label>
+            <input type="radio" name="suite" id="second">
+            <label for="second">Suíte class</label>
+            <input type="radio" name="suite" id="master">
+            <label for="master">Suíte Master</label>
+        </fieldset>
+        
+        <fieldset>
+            <h3>Selecione o tipo de acomodação:</h3>
+            <input type="checkbox" name="opção" id="opção1">
+            <label for="opção1">Café da manhã</label>
+            <input type="checkbox" name="opção" id="opção2">
+            <label for="opção2">Estacionamento</label>
+            <input type="checkbox" name="opção" id="opção3">
+            <label for="opção3">Concierge</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="arq">Selecione o arquivo:</label>
+            <input type="file" id="arq">
+        </fieldset>
+
+        <fieldset>
+            <label for="cor">Selecione a cor:</label>
+            <input type="color" id="cor">
+        </fieldset>
+
+        <fieldset>
+            <!-- required trata a informação como obrigatória -->
+            <label for="nome2">Nome do usuário:</label>
+            <input type="text" id="nome2" required>
+        </fieldset>
+
+        <br>
+
+        <label for="nome3">Nome do hóspede:</label>
+        <input type="text" id="nome3">
+        <input type="submit" id="enviar" value="Enviar dados">
+        
+        <label for="nome4">Nome do hóspede:</label>
+        <input type="text" id="nome4">
+        <input type="reset" id="limpar" value="Limpar dados">
+
+        <h2>Tipo de suíte:</h2>
+        <select id="suite2" required>
+            <option value="0">Selecione uma opção</option>
+            <option value="1">Class</option>
+            <option value="2">Premium</option>
+            <option value="3">Master</option>
+        </select>
+
+        
+    </form>
+    
+</body>
+</html>
